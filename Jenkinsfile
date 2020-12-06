@@ -9,5 +9,12 @@ pipeline {
                 }
             }
         }
+        stage('Test') { 
+            steps {
+                dir('server') {
+                    sh 'npm test'
+                }
+            }
+        }
     }
 }
