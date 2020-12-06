@@ -4,7 +4,7 @@ const port = 3000;
 
 app.get('/data', (req, res) => {
     res.status(200).json({
-        data: "Hola mundo :("
+        data: "Hola mundo :)"
     })
 });
 
