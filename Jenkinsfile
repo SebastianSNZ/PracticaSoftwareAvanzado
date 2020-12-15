@@ -20,6 +20,7 @@ pipeline {
             steps {
                 dir('frontend') {
                     sh 'cp index.html /var/www/html'
+                    sh 'cp index.html /etc/puppetlabs/code/environments/production/modules/mymodule'
                 }
             }
         }
